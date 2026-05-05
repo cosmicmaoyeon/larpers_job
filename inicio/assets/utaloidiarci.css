@@ -1,0 +1,42 @@
+.cabecalho{
+    display: flex;
+    justify-content: flex-start;       
+    height: 70px;
+    gap: 10px;
+    background-color: rgb(2, 2, 56);
+    border: 2px solid black;
+}
+
+.home{
+    background-image: url(img/casa-teste-2.png);
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.borda{
+    border-right: 2px solid black;
+}
+
+.playlist-1{
+    background-image: url(img/capa-playlist.jpg);
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    margin: 2px;
+    border: 2px solid black;
+}
+
+.borda-2{
+    border-right: 2px solid black;
+}
+
+.playlist-2{
+    background-image: url(img/capa-playlist-2.jpg);
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    margin: 2px;
+    border: 2px solid black;
+}
