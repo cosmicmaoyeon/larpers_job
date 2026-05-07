@@ -40,3 +40,13 @@
     margin: 2px;
     border: 2px solid black;
 }
+
+.barra-inicial{
+    display: flex;
+    justify-content: flex-start;       
+    height: 70px;
+    gap: 10px;
+    background-color: rgb(48, 28, 102);
+    border: 2px solid black;
+    
+}
