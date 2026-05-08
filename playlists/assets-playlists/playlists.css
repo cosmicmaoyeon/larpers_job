@@ -8,7 +8,7 @@
 }
 
 .home{
-    background-image: url(img/casa-teste-2.png);
+    background-image: url(../../inicio/assets/img/casa-teste-2.png);
     width: 60px;
     height: 60px;
     background-size: cover;
@@ -20,7 +20,7 @@
 }
 
 .playlist-1{
-    background-image: url(img/capa-playlist.jpg);
+    background-image: url(../../inicio/assets/img/capa-playlist.jpg);
     width: 60px;
     height: 60px;
     background-size: cover;
@@ -33,7 +33,7 @@
 }
 
 .playlist-2{
-    background-image: url(img/capa-playlist-2.jpg);
+    background-image: url(../../inicio/assets/img/capa-playlist-2.jpg);
     width: 60px;
     height: 60px;
     background-size: cover;
