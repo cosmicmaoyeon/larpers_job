@@ -1,0 +1,83 @@
+.cabecalho{
+    display: flex;
+    justify-content: flex-start;       
+    height: 70px;
+    background-color: rgb(48, 28, 102);
+    border: 2px solid black;
+    position: sticky;
+    top: 0px;
+}
+
+.home{
+    background-color: rgb(68, 0, 255);
+    width: 88px;
+    height: 68px;
+    background-size: cover;
+}
+
+.home img{
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.borda{
+    border-right: 2px solid black;
+}
+
+.playlist-1{
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    margin: 3px;
+    border: 2px solid black;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid white;
+}
+
+.borda-2{
+    border-right: 2px solid black;
+}
+
+.playlist-2{
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    margin: 3px;
+    border: 2px solid black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.barra-inicial{
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(140, 104, 240);
+    border: 2px solid black;
+    border-bottom: none;
+    height: 70px;
+}
+
+.barra-de-pesquisa input {
+    width: 1300px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.barra-de-pesquisa button{
+    height: 30px;
+    width: 40px;
+    margin-left: 5px;
+    vertical-align: middle;
+    margin-bottom: 2px;
+    background-color: black;
+}
+
+.barra-de-pesquisa button img{
+    padding-top: 2px;
+    padding-left: 2px;
+    background-color: black;
+}

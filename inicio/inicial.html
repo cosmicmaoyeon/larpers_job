@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LarPIfy</title>
-    <link rel="stylesheet" href="assets/utaloidiarci.css">
+    <title>LarPIfy - Início</title>
+    <link rel="stylesheet" href="assets/inicio-novidades.css">
 </head>
 <body>
     <header>
@@ -29,21 +29,125 @@
     </div>
     </header>
     <div class="barra-inicial">
-        <a href="inicial/novidades.html">
-        <div class="novidades">Novidades</div>
+        <a href="inicial.html">
+        <div class="novidades"><b>Novidades</b></div>
         </a>
         <a href="inicial/recomendacoes.html">
-        <div class="recomendacoes">Recomendações</div>
+        <div class="recomendacoes"><b>Recomendações</b></div>
         </a>
         <a href="inicial/categorias.html">
-        <div class="categorias">Categorias</div>
+        <div class="categorias"><b>Categorias</b></div>
         </a>
         <div class="barra-de-pesquisa">
             <form action="pesquisa.html">
             <input type="text" class="pesquisa" name="busca" placeholder="Pesquisar...">
-            <button type="reset">Limpar</button>
+            <button type="reset">
+                <img src="../inicio/assets/img/x-2.png" width="20" height="20">
+            </button>
             </form>
+            </div>
         </div>
     </div>
+    <div class="conteudo">  
+        <div class="carrossel">
+        <button class="seta" onclick="anterior()">
+            ◄
+        </button>
+        <div class="painel">
+            <div class="imagem-area">
+                <img id="capa" src="">
+            </div>
+            <div class="infos">
+                <h1 id="nome"></h1>
+                <div class="linha"></div>
+                <p id="descricao"></p>
+                <div class="tags" id="tags"></div>
+            </div>
+            <div class="artista">
+                <img id="foto-artista" src="">
+                <p id="nome-artista"></p>
+                <p id="descricao-artista"></p>
+            </div>
+        </div>
+        <button class="seta" onclick="proxima()">
+            ►
+        </button>
+        </div>
+        <div class="top-10">
+            <div class="alinhar">
+                <div class="titulo">
+                    <H1><b>Top 10 - Mundo</b></H1>
+                </div>
+                <div class="lista">
+                    <div class="musga" onmouseover="mostrarInfo(0)">
+                        <h1>1.</h1>
+                        <img id="capinha" src="https://i.scdn.co/image/ab67616d0000b273f1d02a6cec967f8b6b78f76e">
+                        <h1>Beauty and a Beat</h1>
+                    </div>
+
+                    <div class="musga" onmouseover="mostrarInfo(1)">
+                        <h1>2.</h1>
+                        <img id="capinha" src="https://i.scdn.co/image/ab67616d0000b27332a7d87248d1b75463483df5">
+                        <h1>Billie Jean</h1>
+                    </div>
+
+                    <div class="musga" onmouseover="mostrarInfo(2)">
+                        <h1>3.</h1>
+                        <img id="capinha" src="https://i.scdn.co/image/ab67616d00001e02dfa17fad7f190c901603270e">
+                        <h1>SWIN</h1>
+                    </div>
+                    <div class="musga" onmouseover="mostrarInfo(3)">
+                        <h1>4.</h1>
+                        <img id="capinha" src="https://i.scdn.co/image/ab67616d00001e024a42166d927b3acce345c5c0">
+                        <h1>Babydoll</h1>
+                    </div>
+
+                    <div class="musga" onmouseover="mostrarInfo(4)">
+                        <h1>5.</h1>
+                        <img id="capinha" src="https://i.scdn.co/image/ab67616d0000b27332a7d87248d1b75463483df5">
+                        <h1>Beat It</h1>
+                    </div>
+
+                    <div class="musga" onmouseover="mostrarInfo(5)">
+                        <h1>6.</h1>
+                        <img id="capinha" src="https://i.scdn.co/image/ab67616d0000b273c25b53f0a34aa1bb4f77cb3e">
+                        <h1>drop dead</h1>
+                    </div>
+                    <div class="musga" onmouseover="mostrarInfo(6)">
+                        <h1>7.</h1>
+                        <img id="capinha" src="https://i.scdn.co/image/ab67616d0000b2732b74bf21c7e4f56758610949">
+                        <h1>Don't Stop 'Til You Get Enough</h1>
+                    </div>
+
+                    <div class="musga" onmouseover="mostrarInfo(7)">
+                        <h1>8.</h1>
+                        <img id="capinha" src="https://i.scdn.co/image/ab67616d0000b273c7c031ce9d06b131f8563676">
+                        <h1>Dracula - JENNIE Remix</h1>
+                    </div>
+
+                    <div class="musga" onmouseover="mostrarInfo(8)">
+                        <h1>9.</h1>
+                        <img id="capinha" src="https://i.scdn.co/image/ab67616d0000b2737fd4049ad3b037358cf809ef">
+                        <h1>back to friends</h1>
+                    </div>
+                    <div class="musga" onmouseover="mostrarInfo(9)">
+                        <h1>10.</h1>
+                        <img id="capinha" src="https://i.scdn.co/image/ab67616d0000b273fddfffec51b4580acae727c1">
+                        <h1>End of Beginning</h1>
+                    </div>
+                </div>
+            </div>
+                <div class="painel-info">
+                <img id="mini-capa">
+                <h2 id="mini-nome"></h2>
+                <p id="mini-artista"></p>
+                <p id="mini-desc"></p>
+             </div>
+        </div>
+
+</div>
+</div>
+    </div>
+    <script src="novidades.js"></script>
     </body>
 </html>

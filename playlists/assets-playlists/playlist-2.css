@@ -4,6 +4,8 @@
     height: 70px;
     background-color: rgb(48, 28, 102);
     border: 2px solid black;
+    position: sticky;
+    top: 0px;
 }
 
 .home{
@@ -11,7 +13,6 @@
     width: 88px;
     height: 68px;
     background-size: cover;
-    border: 2px solid white;
 }
 
 .home img{
@@ -45,34 +46,39 @@
     border: 2px solid black;
     margin-left: 5px;
     margin-right: 5px;
+    border: 2px solid white;
 }
 
 .barra-inicial{
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 150px 150px 150px 1fr;
+    display: flex;
     justify-content: flex-start; 
-    height: 70px;
-    gap: 20px;
-    background-color: rgb(186, 161, 255);
-    border: 2px solid black;
     align-items: center;
-}
-
-.barra-de-pesquisa input{
-    width: 93%;
-    height: 30px;
-}
-
-.novidades{
-    margin-left: 20px;
-    border: 2px solid white;
+    gap: 20px;
+    background-color: rgb(140, 104, 240);
+    border: 2px solid black;
     border-bottom: none;
-    padding: 5px;
+    height: 70px;
 }
 
-a{
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
+.barra-de-pesquisa input {
+    width: 1300px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 20px;
 }
+
+.barra-de-pesquisa button{
+    height: 30px;
+    width: 40px;
+    margin-left: 5px;
+    vertical-align: middle;
+    margin-bottom: 2px;
+    background-color: black;
+}
+
+.barra-de-pesquisa button img{
+    padding-top: 2px;
+    padding-left: 2px;
+    background-color: black;
+}
+
