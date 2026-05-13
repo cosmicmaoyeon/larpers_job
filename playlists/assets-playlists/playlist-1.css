@@ -115,6 +115,15 @@
     background-color: rgb(186, 161, 255);
     border: 2px solid black;
 }
+
+.controles{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: rgb(210, 195, 253);
+}
+
 #capa{
     border: 6px solid rgb(67, 0, 98);
 }
