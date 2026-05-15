@@ -32,7 +32,7 @@
     <div class="barra-inicial">
         <div class="barra-de-pesquisa">
             <form action="pesquisa.html">
-            <input type="text" class="pesquisa" name="busca" placeholder="Pesquisar...">
+            <input type="text" class="pesquisa" name="busca" placeholder="Pesquisar na playlist...">
             <button type="reset">
                 <img src="../inicio/assets/img/x-2.png" width="20" height="20">
             </button>
@@ -130,29 +130,32 @@
             <div class="painel-controle">
                 <h1 id="nome"></h1>
                 <h1 id="artista"></h1>
-                <audio id="player" src=""></audio>
-                    <div class="controles">
-                        <button id="anterior"><i class="fa-solid fa-backward-step"></i></button>
-                        <button id="pause"><i class="fa-solid fa-play"></i></button>
-                        <button id="proxima"><i class="fa-solid fa-forward-step"></i></button>
-                    </div>
-                    <div class="footer">
+                <div class="cima">
                         <div class="progress-bar">
                             <div class="progresso">
 
                             </div>
                         </div>
-                    </div>
-                    <div class="tempo">
+                <div class="tempo">
                         <span id="tempoAtual">0:00</span>
                         <span id="tempoFinal">0:00</span>
                     </div>
+                <audio id="player" src=""></audio>
+                    <div class="controles">
+                        <button id="anterior"><i class="fa-solid fa-backward-step"></i></button>
+                        <button id="tocar"><i class="fa-solid fa-play"></i></button>
+                        <button id="proxima"><i class="fa-solid fa-forward-step"></i></button>
+                    </div>
+                    </div>
             </div>
+            <script type="module" src="assets-playlists/config-musgas.js"></script>
+            <script type="module" src="assets-playlists/musgas.js" ></script>
         </div>
         <div class="direita">
             <h1 id="letra"></h1>
         </div>
         <script src="assets-playlists/java-playlist1.js"></script>
+        
     </div>
     </body>
 </html>

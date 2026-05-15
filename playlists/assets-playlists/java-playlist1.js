@@ -1,7 +1,7 @@
 const musgas = [
     {
         letra: "Someone said they left together\nI ran out the door to get her\nShe was holding hands with Trevor\nNot the greatest feeling ever\nSaid: Pull yourself together\nYou should try your luck with Heather\nThen I heard they slept together\nOh, the less I know, the better\nThe less I know, the better\nOh, my love\nCan't you see yourself by my side?\nNo surprise\nWhen you're on his shoulder like every night\nOh, my love\nCan't you see that you're on my mind?\nDon't suppose we could convince your lover to change his mind\nSo goodbye\nShe said: It's not now or never\nWait ten years, we'll be together\nI said: Better late than never\nJust don't make me wait forever\nDon't make me wait forever\nDon't make me wait forever\nOh, my love\nCan't you see yourself by my side?\nI don't suppose you could convince your lover to change his mind\nI was doing fine without you\nTill I saw your face, now I can't erase\nGiving in to all his bullshit\nIs this what you want? Is this who you are?\nI was doing fine without you\nTill I saw your eyes turn away from mine\nOh, sweet darling, where he wants you\nSaid: Come on, Superman, say your stupid line\nSaid: Come on, Superman, say your stupid line\nSaid: Come on, Superman, say your stupid line\n",
-        nome: "the Less I Know The Better",
+        nome: "The Less I Know The Better",
         artista: "Tame Impala",
         capa: "https://akamai.sscdn.co/uploadfile/letras/albuns/e/8/f/1/435571730471495.jpg",
     },

@@ -105,8 +105,23 @@
     cursor: pointer;
     transform: scale(1.125);
     transition: transform 0.2s;
+}
+
+.esquerda button{
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    height: 23px;
+}
+
+.esquerda button:hover{
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.2s;
     color: yellow;
 }
+
 .meio{
     display: flex;
     flex-direction: column;
@@ -116,16 +131,9 @@
     border: 2px solid black;
 }
 
-.controles{
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    background-color: rgb(210, 195, 253);
-}
-
 #capa{
     border: 6px solid rgb(67, 0, 98);
+    box-shadow: 0 1px 10px rgb(0, 0, 0);
 }
 .direita{
     width: 35%;
@@ -136,11 +144,78 @@
 }
 
 #nome{
-    font-size: 20px;
+    font-size: 35px;
     color: blue;
+    justify-content: center;
+    margin-bottom: -10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#artista{
+    display: flex;
+    font-size: 25px;
+    color: black;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 #letra{
     font-size: 8px;
     padding: 20px;
+}
+
+.controles{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(210, 195, 253);
+    cursor: pointer;
+}
+
+ .controles button{
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.controles i{
+    padding: 5px;
+    border-radius: 50%;
+    transition: all .2s;
+    background-color: rgb(186, 161, 255);
+}
+.controles i:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.tempo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tempo span{
+    font-size: 22px;
+    color: black;
+}
+
+.cima{
+    width: 100%;
+}
+
+.progress-bar{
+    height: 5px;
+    background-color: rgb(202, 192, 229);
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.progress{
+    height: 5px;
+    background-color: rgb(67, 0, 98);
+    border-radius: 5px;
 }

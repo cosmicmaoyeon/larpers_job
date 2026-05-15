@@ -146,6 +146,7 @@ a{
     border:3px solid #4f3179;
     width: 1000px;
     height: 450px;
+    box-shadow: 3px 5px 20px rgb(39, 39, 39);
 }
 .imagem-area{
     width: 55%;
