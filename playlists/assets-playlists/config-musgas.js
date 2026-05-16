@@ -1,79 +1,107 @@
 const player = document.querySelector("#player");
-const nomeMusga = document.querySelector("#nome");
-const artistaMusga = document.querySelector("#artista")
-const tocaMusga = document.querySelector("#tocar");
-const voltaMusga = document.querySelector("#anterior");
-const avancaMusga = document.querySelector("#proxima");
-const tempo = document.querySelector("#tempoAtual");
-const duracao = document.querySelector("#tempoFinal");
-const barraProgresso = document.querySelector("#progress-bar");
-const progresso = document.querySelector("#progresso");
+const musicName = document.querySelector("#musicName");
+const artistName = document.querySelector("#artistName");
+const lyrics = document.querySelector("#letra");
+const cover = document.querySelector("#capa");
+const playPauseButton = document.querySelector("#playPauseButton");
+const prevButton = document.querySelector("#prevButton");
+const nextButton = document.querySelector("#nextButton");
+const currentTime = document.querySelector("#currentTime");
+const duration = document.querySelector("#duration");
+const progressBar = document.querySelector(".progress-bar");
+const progress = document.querySelector(".progress");
 
-import musgas from "./musgas'.js";
+import songs from "./songs.js";
 
-const botaopause = "<i class='fa-solid fa-pause'></i>"
-const botaoplay = "<i class='fa-solid fa-play'></i>"
+const textButtonPlay = "<i class='fa-solid fa-play'></i>";
+const textButtonPause = "<i class='fa-solid fa-pause'></i>";
 
 let index = 0;
 
-anterior.onclick = () => voltaoupassa("anterior");
-proxima.onclick = () => voltaoupassa;
+prevButton.onclick = () => prevNextMusic("prev");
+nextButton.onclick = () => prevNextMusic();
 
-tocar.onclick = () => daoplay();
+playPauseButton.onclick = () => playPause();
 
-const daoplay = () => {
-    if (player.pausado) {
-        player.play();
-        tocar.innerHTML = botaopause;
-    } else {
-        player.pause();
-        tocar.innerHTML = botaoplay;
+const playPause = () => {
+  if (player.paused) {
+    player.play();
+    playPauseButton.innerHTML = textButtonPause;
+  } else {
+    player.pause();
+    playPauseButton.innerHTML = textButtonPlay;
+  }
+};
+
+player.ontimeupdate = () => updateTime();
+
+const updateTime = () => {
+  const currentMinutes = Math.floor(player.currentTime / 60);
+  const currentSeconds = Math.floor(player.currentTime % 60);
+  currentTime.textContent = currentMinutes + ":" + formatZero(currentSeconds);
+
+  const durationFormatted = isNaN(player.duration) ? 0 : player.duration;
+  const durationMinutes = Math.floor(durationFormatted / 60);
+  const durationSeconds = Math.floor(durationFormatted % 60);
+  duration.textContent = durationMinutes + ":" + formatZero(durationSeconds);
+
+  const progressWidth = durationFormatted
+    ? (player.currentTime / durationFormatted) * 100
+    : 0;
+
+  progress.style.width = progressWidth + "%";
+};
+
+const formatZero = (n) => (n < 10 ? "0" + n : n);
+
+progressBar.onclick = (e) => {
+  const newTime = (e.offsetX / progressBar.offsetWidth) * player.duration;
+  player.currentTime = newTime;
+};
+
+const loadMusic = () => {
+  player.src = songs[index].src;
+  musicName.innerHTML = songs[index].name;
+  artistName.innerHTML = songs[index].artist;
+  lyrics.innerHTML = songs[index].lyrics;
+  cover.src = songs[index].cover;
+};
+
+const prevNextMusic = (type = "next") => {
+
+  if (type === "next") {
+    index++;
+
+    if (index >= songs.length) {
+      index = 0;
     }
-}
 
-player.ontempoAtualiza = () => atualizaTempo
+  } else if (type === "prev") {
 
-const atualizaTempo = () => {
-    const minutosAgora = Math.floor(player.tempo / 60);
-    const segundosAgora = Math.floor(player.tempo % 60);
+    index--;
 
-    tempo.textContent = minutosAgora + ":" + formatazero(segundosAgora);
-
-    const formataduracao = isNaN(player.duracao) ? 0 : player.duracao;
-    const minutosDuracao = Math.floor(formataduracao / 60);
-    const segundosDuracao = Math.floor(formataduracao % 60);
-    duracao.textContent = minutosDuracao + ":" + formatazero(segundosDuracao);
-
-    const progressTamanho = formataduracao
-        ? (player.tempo / formataduracao) * 100
-        : 0;
-    
-    progresso.style.width = progressTamanho + "%";
-};
-
-const formatazero = (n) => (n < 10 ? "0" + n : n);
-
-barraProgresso.onclick = (e) => {
-    const NovoTempo = (e.offsetX / barraProgresso.offsetWidth) * player.duracao;
-    player.tempo = NovoTempo;
-};
-
-const voltaoupassa = (type = "proxima") => {
-    if ((type == "proxima" && index + 1 === musgas.tamanho) || 
-    (type === "anterior")) {
-        index = 0;
-    } else if (type == "anterior" && index === 0) {
-        index = musgas.tamanho;
-    } else {
-        index = type === "anterior" && index ? index - 1 : index + 1;
+    if (index < 0) {
+      index = songs.length - 1;
     }
+  }
 
-    player.src = musgas[index].src;
-    nomeMusga.innerHTML = mussgas[index].name;
-    artistaMusga.innerHTML = musgas[index].name;
-    if (type !== "anterior") daoplay();
+  loadMusic();
 
-    atualizaTempo();
+  player.play();
+
+  playPauseButton.innerHTML = textButtonPause;
 };
 
-voltaoupassa("anterior");
+window.mostrar = (i) => {
+  index = i;
+
+  loadMusic();
+
+  player.play();
+
+  playPauseButton.innerHTML = textButtonPause;
+};
+
+loadMusic();
+
+player.onended = () => prevNextMusic();

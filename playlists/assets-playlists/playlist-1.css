@@ -143,7 +143,7 @@
     padding: 20px;
 }
 
-#nome{
+#MusicName{
     font-size: 35px;
     color: blue;
     justify-content: center;
@@ -153,7 +153,7 @@
     white-space: nowrap;
 }
 
-#artista{
+#ArtistName{
     display: flex;
     font-size: 25px;
     color: black;
@@ -166,38 +166,49 @@
     padding: 20px;
 }
 
-.controles{
+.player{
+    display: flex;
+}
+
+.controls{
     display:flex;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(210, 195, 253);
     cursor: pointer;
+    width: 500px;
+    height: 50px;
 }
 
- .controles button{
+ .controls button{
     background: none;
     border: none;
+    justify-content: center;
     font-size: 30px;
+    background-color: rgb(210, 195, 253);
     cursor: pointer;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
 }
 
-.controles i{
+.controls i{
     padding: 5px;
     border-radius: 50%;
     transition: all .2s;
     background-color: rgb(186, 161, 255);
 }
-.controles i:hover{
-    background-color: rgb(0, 0, 0);
+.controls button:hover{
+    background-color: rgb(201, 181, 255);
 }
 
-.tempo {
+.time {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.tempo span{
+.time span{
     font-size: 22px;
     color: black;
 }
@@ -208,7 +219,7 @@
 
 .progress-bar{
     height: 5px;
-    background-color: rgb(202, 192, 229);
+    background-color: rgb(186, 172, 233);
     cursor: pointer;
     margin-bottom: 5px;
     border-radius: 5px;
