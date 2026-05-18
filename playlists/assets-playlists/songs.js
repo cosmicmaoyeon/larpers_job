@@ -11,7 +11,7 @@ export default [
         name: "Zombie",
         artist: "The Cranberries",
         cover: "https://i.scdn.co/image/ab67616d0000b273e2213d84fabb15100c425198",
-        lyrics: "vamo\ntabo\n",
+        lyrics: "city baby\ntabo\n",
     },
     {
         src: "assets-playlists/src/clint-eastwood.mp3",

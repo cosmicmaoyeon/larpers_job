@@ -1,0 +1,89 @@
+.conteudo {
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(181, 138, 221);
+}
+
+.cima {
+    display: flex;
+    height: 50%;
+}
+
+.cima h1 {
+    margin-left: 14%;
+}
+.cima img{
+    justify-content: flex-start;
+    margin-left: 10%;
+    border-radius: 50%;
+    width: 15%;
+    margin-top: 10%;
+    box-shadow: 0 1px 10px black;
+
+}
+
+.baixo {
+    display: flex;
+    height: 50%;
+    background-color: rgb(181, 138, 221);
+    flex-direction: column;
+
+}
+
+.baixo h1 {
+    margin-left: 3%;
+}
+
+.baixo-img img{
+    justify-content: center;
+    margin: 2%;
+    border-radius: 50%;
+    width: 10%;
+    align-items: center;
+    box-shadow: 0 1px 10px black;
+}
+
+.baixo-img img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
+
+.baixo-img{
+    display: flex;
+    justify-content: center;
+}
+
+.nomes {
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.5;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nomes h2 {
+    margin-top: 3px;
+    margin-right: 79px;
+    margin-left: 80px;
+    text-align: center;
+}
+
+
+.musics-1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(114, 31, 190);
+    box-shadow: 0 1px 10px black;
+}
+
+.musics-2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(114, 31, 190);
+    box-shadow: 0 1px 10px black;
+}
+
