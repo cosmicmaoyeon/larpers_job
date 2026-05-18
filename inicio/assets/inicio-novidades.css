@@ -1,12 +1,25 @@
 .cabecalho{
     display: flex;
-    justify-content: flex-start;       
+    justify-content: space-between;       
     height: 70px;
     background-color: rgb(48, 28, 102);
     border: 2px solid black;
-    position: sticky;
-    top: 0px;
+    flex-direction: row;
 }
+
+.grupo-esquerda{
+    display: flex;
+}
+
+.cabecalho-2{
+    margin-left: auto;
+}
+
+.perfil i{
+    width: 60px;
+    height: 60px;
+}
+
 
 .home{
     background-color: rgb(68, 0, 255);
@@ -47,6 +60,10 @@
     border: 2px solid black;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.perfil{
+    margin: auto;
 }
 
 .barra-inicial{
