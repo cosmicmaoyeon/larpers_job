@@ -71,9 +71,9 @@ function mostrarMusica(){
     nomeArtista.innerText = musica.artista;
     descricaoArtista.innerText = musica.descricaoArtista;
     tags.innerHTML = "";
-    musica.tags.forEach(tag => {
-        tags.innerHTML += `<span>${tag}</span>`;
-    });
+    musica.tags.forEach(function(tag){
+    tags.innerHTML += "<span>" + tag + "</span>";
+});
 }
 window.proxima = function(){
 

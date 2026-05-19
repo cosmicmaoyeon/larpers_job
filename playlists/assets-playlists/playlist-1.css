@@ -106,7 +106,7 @@
     align-items: start;
     border: 2px solid black;
     padding-right: 10px;
-    background-color: #872cdd;
+    background-color: #a35be7;
     justify-content: space-between;
 }
 
@@ -155,6 +155,7 @@
     box-shadow: 0 1px 10px rgb(0, 0, 0);
 }
 .direita{
+    display: flex;
     width: 35%;
     font-size: 8px;
     background-color: blueviolet;
@@ -168,6 +169,17 @@
     font-size: 30px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 6px;
+}
+
+.extrema-direita{
+    display: flex;
+    margin-top: 120%;
+    margin-left: 22%;
+}
+
+.extrema-direita h1{
+    font-size: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #musicName{

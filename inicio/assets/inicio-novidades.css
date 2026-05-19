@@ -244,10 +244,14 @@ a{
     align-items:flex-start;
 }
 
-.titulo{
+.titulo {
     color:black;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titulo h1{
+     text-shadow: 2px 2px 0px white;
 }
 
 .alinhar{
