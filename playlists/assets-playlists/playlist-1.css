@@ -154,7 +154,6 @@
     border: 6px solid rgb(67, 0, 98);
     box-shadow: 0 1px 10px rgb(0, 0, 0);
 }
-
 .direita{
     display: flex;
     width: 35%;
@@ -170,10 +169,10 @@
     font-size: 30px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 6px;
+    margin-bottom: 5px;
 }
-
 .extrema-direita{
-    padding-left: 230px;
+    padding-left: 140px;
     align-self: flex-start;
     margin-bottom: auto;
 }
@@ -192,18 +191,21 @@
     font-size: 35px;
     color: blue;
     justify-content: center;
-    margin-bottom: -10px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
 
 #artistName{
-    display: flex;
+    display: inline-block;
+    width: 500px;
     font-size: 25px;
     color: black;
-    justify-content: center;
+    text-align: center;
     margin-bottom: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 #letra{
@@ -211,7 +213,6 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     white-space: pre-line;
     line-height: 1.3;
-    margin-bottom: 10px;
 }
 
 .player{
