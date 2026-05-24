@@ -74,21 +74,36 @@ const loadMusic = () => {
   cover.src = songs[index].cover;
 };
 
+let minIndex;
+let maxIndex;
+
+if (window.location.pathname.includes("playlist-1.html")) {
+
+  minIndex = 0;
+  maxIndex = 14;
+
+} else if (window.location.pathname.includes("playlist-2.html")) {
+
+  minIndex = 15;
+  maxIndex = 29;
+}
+
 const prevNextMusic = (type = "next") => {
 
   if (type === "next") {
+
     index++;
 
-    if (index >= songs.length) {
-      index = 0;
+    if (index > maxIndex) {
+      index = minIndex;
     }
 
   } else if (type === "prev") {
 
     index--;
 
-    if (index < 0) {
-      index = songs.length - 1;
+    if (index < minIndex) {
+      index = maxIndex;
     }
   }
 
