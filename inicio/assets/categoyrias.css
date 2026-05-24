@@ -115,28 +115,6 @@ a{
   font-size: 20px;
 }
 
-.conteudo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(186, 161, 255);
-    border: 2px solid black;
-    border-top: 2px solid white;
-    padding-top: 50px;
-}
-
-.quadrados-categorias{
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px 200px 200px 200px 200px;
-    grid-template-rows: 200px 200px 200px 200px;
-    gap: 20px;
-    margin-bottom: 50px;
-}
-
-.item{
-    background-color: aliceblue;
-}
-
 .rodapé{
     display: grid;
     justify-content: center;
