@@ -56,43 +56,12 @@
     margin-right: 5px;
 }
 
-.barra-inicial{
-    display: flex;
-    justify-content: flex-start; 
-    align-items: center;
-    gap: 20px;
-    background-color: rgb(140, 104, 240);
-    border: 2px solid black;
-    border-bottom: none;
-    height: 70px;
-}
-
-.barra-de-pesquisa input {
-    width: 1300px;
-    height: 30px;
-    margin-top: 5px;
-    margin-left: 20px;
-}
-
-.barra-de-pesquisa button{
-    height: 30px;
-    width: 40px;
-    margin-left: 5px;
-    vertical-align: middle;
-    margin-bottom: 2px;
-    background-color: black;
-}
-
-.barra-de-pesquisa button img{
-    padding-top: 2px;
-    padding-left: 2px;
-    background-color: black;
-}
-
 .conteudo {
     display:flex;
     flex-direction: column;
     background-color: rgb(181, 138, 221);
+    border: 2px solid black;
+    border-top: none;
 }
 
 .cima {
