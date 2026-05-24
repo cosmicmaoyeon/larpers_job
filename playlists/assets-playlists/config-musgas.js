@@ -16,7 +16,14 @@ import songs from "./songs.js";
 const textButtonPlay = "<i class='fa-solid fa-play'></i>";
 const textButtonPause = "<i class='fa-solid fa-pause'></i>";
 
-let index = 0;
+let index;
+
+if (window.location.pathname.includes("playlist-1.html")) {
+  index = 0;
+
+} else if (window.location.pathname.includes("playlist-2.html")) {
+  index = 15;
+}
 
 prevButton.onclick = () => prevNextMusic("prev");
 nextButton.onclick = () => prevNextMusic();

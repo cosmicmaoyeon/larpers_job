@@ -88,3 +88,236 @@
     background-color: black;
 }
 
+.playlist{
+    display: flex;
+    justify-content: flex-start;
+    border: 2px solid black;
+}
+.esquerda{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: blueviolet;
+    width: 30%;
+    padding-top: 3%;
+    border-right: 2px solid black;
+}
+.esquerda td{
+    align-items: start;
+    border: 2px solid black;
+    padding-right: 10px;
+    background-color: #a35be7;
+    justify-content: space-between;
+}
+
+
+.esquerda tr:hover{
+    cursor: pointer;
+    transform: scale(1.125);
+    transition: transform 0.2s;
+    color: yellow;
+}
+
+.esquerda button{
+    width: 290px;
+    text-align: left;
+    background: none;
+    border: none;
+    height: 23px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.esquerda button:hover{
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.2s;
+    color: yellow;
+}
+
+.esquerda span{
+    text-align: end;
+}
+
+.meio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    background-color: rgb(186, 161, 255);
+}
+
+#capa{
+    margin-top: 10%;
+    border: 6px solid rgb(67, 0, 98);
+    box-shadow: 0 1px 10px rgb(0, 0, 0);
+}
+.direita{
+    display: flex;
+    width: 35%;
+    font-size: 8px;
+    background-color: blueviolet;
+    border-left: 2px solid black;
+    padding-left: 15px;
+    padding-bottom: 2px;
+    height: 800px;
+    overflow-y: auto;
+}
+.direita h1{
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 6px;
+}
+
+.extrema-direita{
+    padding-left: 140px;
+    align-self: flex-start;
+    margin-bottom: auto;
+}
+
+.extrema-direita a{
+    color: black;
+}
+
+.extrema-direita h1{
+    font-size: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#musicName{
+    display: flex;
+    font-size: 35px;
+    color: blue;
+    justify-content: center;
+    margin-bottom: -10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#artistName{
+    display: flex;
+    font-size: 25px;
+    color: black;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#letra{
+    font-size: 17px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    white-space: pre-line;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.player{
+    display: flex;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+    background-color: rgb(210, 195, 253);
+    cursor: pointer;
+    width: 500px;
+    height: 70px;
+}
+
+ .controls button{
+    background: none;
+    border: none;
+    justify-content: center;
+    font-size: 30px;
+    background-color: rgb(210, 195, 253);
+    cursor: pointer;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.controls i{
+    padding: 5px;
+    border-radius: 50%;
+    transition: all .2s;
+    background-color: rgb(186, 161, 255);
+}
+.controls button:hover{
+    background-color: rgb(201, 181, 255);
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.time span{
+    font-size: 22px;
+    color: black;
+}
+
+.cima{
+    width: 100%;
+}
+
+.progress-bar{
+    height: 5px;
+    background-color: rgb(186, 172, 233);
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.progress{
+    height: 5px;
+    background-color: rgb(67, 0, 98);
+    border-radius: 5px;
+}
+
+.rodapé{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20% 20% 20% 20%;
+    height: 140px;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    padding-left: 4%;
+    line-height: 0.7;
+    background-color: #a99abb;
+    border: 2px solid black;
+    border-top: none;
+}
+
+.rodapé h1{
+    color:#1f004e;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.parte-1-icons{
+    padding-left: 15px;
+}
+
+.rodapé p{
+    font-size: 16px;
+}
+
+.rodapé a{
+    font-size: 16px;
+    color: black;
+}
+
+.embaixo{
+    background-color: #7f6a9c;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-top: none;
+    padding: 10px;
+    color: #140130;
+}
+

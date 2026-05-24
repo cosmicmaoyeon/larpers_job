@@ -101,6 +101,7 @@
     background-color: blueviolet;
     width: 30%;
     padding-top: 3%;
+    border-right: 2px solid black;
 }
 .esquerda td{
     align-items: start;
@@ -146,7 +147,6 @@
     align-items: center;
     width: 35%;
     background-color: rgb(186, 161, 255);
-    border: 2px solid black;
 }
 
 #capa{
@@ -154,17 +154,18 @@
     border: 6px solid rgb(67, 0, 98);
     box-shadow: 0 1px 10px rgb(0, 0, 0);
 }
+
 .direita{
     display: flex;
     width: 35%;
     font-size: 8px;
     background-color: blueviolet;
-    border: 2px solid black;
+    border-left: 2px solid black;
     padding-left: 15px;
     padding-bottom: 2px;
     height: 800px;
+    overflow-y: auto;
 }
-
 .direita h1{
     font-size: 30px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -172,9 +173,13 @@
 }
 
 .extrema-direita{
-    display: flex;
-    margin-top: 120%;
-    margin-left: 22%;
+    padding-left: 230px;
+    align-self: flex-start;
+    margin-bottom: auto;
+}
+
+.extrema-direita a{
+    color: black;
 }
 
 .extrema-direita h1{
@@ -202,7 +207,7 @@
 }
 
 #letra{
-    font-size: 210%;
+    font-size: 17px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     white-space: pre-line;
     line-height: 1.3;
@@ -273,4 +278,47 @@
     height: 5px;
     background-color: rgb(67, 0, 98);
     border-radius: 5px;
+}
+
+.rodapé{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20% 20% 20% 20%;
+    height: 140px;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    padding-left: 4%;
+    line-height: 0.7;
+    background-color: #a99abb;
+    border: 2px solid black;
+    border-top: none;
+}
+
+.rodapé h1{
+    color:#1f004e;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.parte-1-icons{
+    padding-left: 15px;
+}
+
+.rodapé p{
+    font-size: 16px;
+}
+
+.rodapé a{
+    font-size: 16px;
+    color: black;
+}
+
+.embaixo{
+    background-color: #7f6a9c;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-top: none;
+    padding: 10px;
+    color: #140130;
 }
