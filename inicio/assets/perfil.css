@@ -65,21 +65,51 @@
 }
 
 .cima {
-    display: flex;
-    height: 50%;
+    display: grid;
+    grid-template-columns: auto 180px 180px;
+    grid-template-rows: auto auto;
+    column-gap: 50px;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: start;
+    height: auto;
 }
 
 .cima h1 {
-    margin-left: 14%;
+    margin: 10px 0 0;
+    margin-left: 50px;
+    text-align: center;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
-.cima img{
-    justify-content: flex-start;
-    margin-left: 10%;
-    border-radius: 50%;
-    width: 15%;
-    margin-top: 10%;
-    box-shadow: 0 1px 10px black;
 
+.cima img {
+    margin: 0;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 50%;
+    width: 220px;
+    box-shadow: 0 1px 10px black;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.musics-1 {
+    background-color: rgb(114, 31, 190);
+    box-shadow: 0 1px 10px black;
+    width: 200px;
+    height: 150px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.musics-2 {
+    background-color: rgb(114, 31, 190);
+    box-shadow: 0 1px 10px black;
+    width: 200px;
+    height: 150px;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
 }
 
 .baixo {
@@ -91,7 +121,7 @@
 }
 
 .baixo h1 {
-    margin-left: 3%;
+    margin-left: 38%;
 }
 
 .baixo-img img{
@@ -117,18 +147,18 @@
 .nomes {
     justify-content: center;
     align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 17%;
     line-height: 1.5;
     flex-direction: row;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .nomes h2 {
     margin-top: 3px;
-    margin-right: 79px;
-    margin-left: 80px;
+    margin-right: 65px;
+    margin-left: 70px;
     text-align: center;
 }
 
