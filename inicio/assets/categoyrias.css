@@ -157,3 +157,14 @@ a{
     padding: 10px;
     color: #140130;
 }
+
+.categorias{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    gap: 10px;
+}
+
+.item{
+    background-color:#a99abb;
+}
