@@ -81,6 +81,7 @@
     text-align: center;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .cima img {
@@ -121,19 +122,31 @@
 }
 
 .baixo h1 {
-    margin-left: 38%;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.baixo-img img{
+.baixo-img{
+    justify-content: space-between;
+}
+
+.img{
+    width: 200px;
     justify-content: center;
-    margin: 2%;
     border-radius: 50%;
-    width: 10%;
     align-items: center;
     box-shadow: 0 1px 10px black;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
-.baixo-img img:hover {
+.img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.img img:hover {
     cursor: pointer;
     transform: scale(1.2);
     transition: transform 0.2s;
@@ -144,24 +157,19 @@
     justify-content: center;
 }
 
-.nomes {
-    justify-content: center;
-    align-items: center;
-    margin-left: 15%;
-    margin-right: 17%;
-    line-height: 1.5;
-    flex-direction: row;
+.nomes{
     display: flex;
-    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+    gap: 7%;
 }
 
-.nomes h2 {
-    margin-top: 3px;
-    margin-right: 65px;
-    margin-left: 70px;
+.nomes h2{
+    width: 10%;
     text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #1f004e;
 }
-
 
 .musics-1{
     width: 100px;
