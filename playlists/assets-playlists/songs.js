@@ -94,7 +94,7 @@ export default [
         src: "assets-playlists/src/the-less-i-know-the-better.mp3",
         name: "The Less I Know the Better",
         artist: "Tame Impala",
-        cover: "",
+        cover: "https://i.scdn.co/image/ab67616d0000b2739e1cfc756886ac782e363d79",
         lyrics: "Someone said they left together\nI ran out the door to get her\nShe was holding hands with Trevor\nNot the greatest feeling ever\nSaid, 'Pull yourself together\nYou should try your luck with Heather'\nThen I heard they slept together\nOh, the less I know the better\nThe less I know the better\n\nOh, my love, can't you see yourself by my side?\nNo surprise, leanin' on his shoulder like every night\nOh, my love, can't you see that you're on my mind?\nDon't suppose you could convince your lover to change his mind\nSo goodbye\n\nShe said, 'It's not now or never\nWait ten years, we'll be together'\nI said, 'Better late than never\nJust don't make me wait forever'\nDon't make me wait forever\nDon't make me wait forever\nOh, my love, can't you see yourself by my side?\nI don't suppose you could convince your lover to change his mind\n\nI was doing fine without ya\n'Til I saw your face, now I can't erase\nGivin' in to all his bullshit\nIs this what you want? Is this who you are?\nI was doing fine without ya\n'Til I saw your eyes turn away from mine\nOh, sweet darling, where he wants ya\n\nSo, come on, Superman, say your stupid line\nSo, come on, Superman, say your stupid line\nSo, come on, Superman, say your stupid line",
     },
     {
