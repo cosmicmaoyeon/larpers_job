@@ -32,7 +32,7 @@ export default [
         name: "505",
         artist: "Arctic Monkeys",
         cover: "https://i.scdn.co/image/ab67616d0000b2730c8ac83035e9588e8ad34b90",
-        lyrics: "vamo\nclint\n",
+        lyrics: "I'm going back to 505\nIf it's a seven hour flight or a forty-five minute drive\nIn my imagination, you're waitin' lyin' on your sideWith your hands between your thighs\nStop and wait a sec\nAnd when you look at me like that, my darlin'\nWhat did you expect?\nI'd probably still adore you\nWith your hands around my neck\nOr I did last time I checked\nNot shy of a spark\nThe knife twists at the thought\nThat I should fall short of the mark\nFrightened by the bite, though\nIt's no harsher than the bark\nThe middle of adventure\nSuch a perfect place to start\nI'm going back to 505\nIf it's a seven hour flight or a forty-five minute drive\nIn my imagination, you're waitin' lyin' on your side\nWith your hands between your thighs\nBut I crumble completely when you cry\nIt seems like once again you've had to greet me with goodbye\nI'm always just about to go and spoil the surprise\nTake my hands off of your eyes too soon\nI'm going back to 505\nIf it's a seven hour flight or a forty-five minute drive\nIn my imagination, you're waitin' lyin' on your side\nWith your hands between your thighs and a smile",
     },
     {
         src: "assets-playlists/src/there-is-a-light-that-never-goes-out.mp3",
