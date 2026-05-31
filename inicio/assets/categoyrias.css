@@ -158,13 +158,19 @@ a{
     color: #140130;
 }
 
-.categorias{
+.conteudo{
     display: grid;
     grid-template-columns: 300px 300px 300px 300px 300px;
     grid-template-rows: 300px 300px 300px 300px 300px;
+    justify-content: center;
     gap: 10px;
+    background-color: rgb(186, 161, 255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid black;
+    border-top: 2px solid white;
 }
 
 .item{
-    background-color:#a99abb;
+    background-color:#2a1d3a;
 }
