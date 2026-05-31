@@ -61,8 +61,8 @@ const updateTime = () => {
   progress.style.width = progressWidth + "%";
 };
 
-progressBar.onclick = (e) => {
-  const newTime = (e.offsetX / progressBar.offsetWidth) * player.duration;
+progressBar.onclick = (hojeucomipipocacomsal) => {
+  const newTime = (hojeucomipipocacomsal.offsetX / progressBar.offsetWidth) * player.duration;
   player.currentTime = newTime;
 };
 
