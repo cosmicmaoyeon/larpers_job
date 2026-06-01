@@ -160,10 +160,10 @@ a{
 
 .conteudo{
     display: grid;
-    grid-template-columns: 300px 300px 300px 300px 300px;
-    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 250px 250px 250px 250px 250px;
+    grid-template-rows: 288px 288px 288px 288px 288px;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     background-color: rgb(186, 161, 255);
     padding-top: 20px;
     padding-bottom: 20px;
@@ -173,4 +173,22 @@ a{
 
 .item{
     background-color:#2a1d3a;
+    display:inline;
+    box-shadow: 1px 2px 10px black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.item img{
+    width: 250px;
+    height: 232px;
+}
+
+.item h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    padding-left: 5px;
+    color: #eaff2e;
+}
+.item:hover{
+    transform: scale(1.2);
 }
