@@ -140,6 +140,14 @@ html, body {
     grid-row: 1 / 2;
 }
 
+.musics-1 img{
+    box-shadow: 2px 2px 10px black;
+}
+
+.musics-2 img{
+    box-shadow: 2px 2px 10px black;
+}
+
 .musics-1 {
     padding: 30px 50px;
     width: 100%;
