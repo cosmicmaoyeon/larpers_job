@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100vh;
+    background-color: rgb(186, 161, 255);
 }
 
 .cabecalho{
@@ -12,6 +13,14 @@ html, body {
     background-color: rgb(48, 28, 102);
     border: 2px solid black;
     flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+}
+@media (max-width: 768px) {
+    .cabecalho, .grupo-esquerda, .cabecalho-2, .painel{
+        flex-direction: column;
+        height: auto;
+    }
 }
 
 .grupo-esquerda{
@@ -29,6 +38,8 @@ html, body {
     height: 68px;
     background-size: cover;
     border: 2px solid white;
+    width: 100%;
+    max-width: 100%;
 }
 
 .home img{
@@ -82,7 +93,7 @@ html, body {
 .barra-inicial{
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 150px 150px 100px 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: flex-start; 
     align-items: center;
     gap: 20px;
@@ -153,6 +164,8 @@ html, body {
     border: 2px solid black;
     border-top: 2px solid white;
     padding-top: 50px;
+    width: 100%;
+    max-width: 100%;
 }
 
 .carrossel{
@@ -161,6 +174,8 @@ html, body {
     justify-content: center;
     gap: 40px;
     margin-top: 60px;
+    width: 100%;
+    max-width: 100%;
 }
 
 .seta{
@@ -183,6 +198,8 @@ html, body {
     width: 1000px;
     height: 450px;
     box-shadow: 3px 5px 20px rgb(39, 39, 39);
+    width: 100%;
+    max-width: 100%;
 }
 .imagem-area{
     width: 55%;
@@ -284,7 +301,8 @@ html, body {
 }
 
 .lista{
-    width:600px;
+    width: 100%;
+    max-width: 100%;
 }
 
 #capinha{
@@ -333,7 +351,7 @@ html, body {
 .rodapé{
     display: grid;
     justify-content: center;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     height: 140px;
     padding-top: 2%;
     padding-bottom: 4%;
