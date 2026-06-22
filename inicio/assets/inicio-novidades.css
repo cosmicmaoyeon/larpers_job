@@ -162,8 +162,6 @@ html, body {
     border: 2px solid black;
     border-top: 2px solid white;
     padding-top: 50px;
-    width: 100%;
-    max-width: 100%;
 }
 
 .carrossel{
@@ -172,8 +170,6 @@ html, body {
     justify-content: center;
     gap: 40px;
     margin-top: 60px;
-    width: 100%;
-    max-width: 100%;
 }
 
 .seta{
@@ -196,8 +192,6 @@ html, body {
     width: 1000px;
     height: 450px;
     box-shadow: 3px 5px 20px rgb(39, 39, 39);
-    width: 100%;
-    max-width: 100%;
 }
 .imagem-area{
     width: 55%;

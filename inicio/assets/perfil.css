@@ -5,6 +5,10 @@ html, body {
     height: 100vh;
 }
 
+.artistas{
+    display: flex;
+    justify-content: center;
+}
 .cabecalho{
     display: flex;
     justify-content: space-between;       
